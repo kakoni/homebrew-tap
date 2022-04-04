@@ -34,6 +34,11 @@ class Sshoot < Formula
     url "https://files.pythonhosted.org/packages/c4/8b/39190c46bd7272813011d97b7e51532a924c4414b630094aa1bf38846714/toolrack-3.0.1.tar.gz"
     sha256 "e14c28c229b6ab49a53773db7bfc9525c4631e7538823dd9af9966dbfaecc5a1"
   end
+  
+  resource "wcwidth" do
+    url "https://files.pythonhosted.org/packages/89/38/459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155/wcwidth-0.2.5.tar.gz"
+    sha256 "c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83" 
+  end
 
   def install
     virtualenv_install_with_resources
